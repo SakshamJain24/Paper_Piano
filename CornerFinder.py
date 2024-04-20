@@ -124,6 +124,7 @@ def main():
     print("Tiles and their corners:")
     for tile, corners in tiles.items():
         print(f"{tile}: {corners}")
+        #comment
 
     # Draw tiles on the image
     for tile, corners in tiles.items():
