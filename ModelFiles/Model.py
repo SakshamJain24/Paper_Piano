@@ -7,7 +7,7 @@ import os
 np.set_printoptions(suppress=True)
 
 # Define the directory path where the model file is located
-model_dir = "C:\\Users\\Lenovo\\Downloads\\Pianotry\\converted_keras (1)"
+model_dir = "C:\\Users\\saksh\\Desktop\\PaperPiano\\ModelFiles\\converted_keras (1)"
 model_file = 'keras_model.h5'
 model_path = os.path.join(model_dir, model_file)
 
