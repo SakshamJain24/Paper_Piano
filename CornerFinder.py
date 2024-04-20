@@ -114,7 +114,7 @@ def main():
     global fixed_corners
 
     # Read the input image
-    image = cv2.imread("C:\\Users\\saksh\\Desktop\\PaperPiano\\TestImg.png")
+    image = cv2.imread("TestImg.png")
 
     # Detect and label corners
     labeled_image, _ = detect_and_label_corners(image.copy())  # Ensure we're working with a copy of the image

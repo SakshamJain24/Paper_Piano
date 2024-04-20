@@ -53,7 +53,7 @@ def detect_and_label_tiles(image):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     # Detect corners using Shi-Tomasi corner detection
-    corners = cv2.goodFeaturesToTrack(gray, maxCorners=14, qualityLevel=0.01, minDistance=10)
+    corners = cv2.goodFeaturesToTrack(gray, maxCorners=20, qualityLevel=0.01, minDistance=15)
 
     # If no corners are found, return the original image
     if corners is None:
@@ -94,7 +94,7 @@ def detect_and_label_tiles(image):
 
 def main():
     # Read the input image
-    image = cv2.imread("C:\\Users\\saksh\\OneDrive\\Pictures\\Screenshots\\test.png")  # Replace 'input_image.jpg' with your image file name
+    image = cv2.imread("test.png")  # Replace 'input_image.jpg' with your image file name
     
     if image is None:
         print("Error: Unable to load image.")
